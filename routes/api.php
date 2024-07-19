@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ItemController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+// Grouping the routes and creating a prefix 'api'.
 
 Route::prefix('api')->group(function(){
 
@@ -24,6 +26,4 @@ Route::prefix('api')->group(function(){
     // DELETE methods
     Route::delete('/category/{id}', [CategoryController::class, 'destroy']);
     Route::delete('/item/{id}', [ItemController::class, 'destroy']);
-
-    Route::get('/items-with-category', [ItemController::class, 'indexWithCategory']);
 });
