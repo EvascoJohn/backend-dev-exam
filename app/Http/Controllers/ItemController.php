@@ -24,8 +24,6 @@ class ItemController extends Controller
     {
         $query = Item::query();
 
-        $search = $request->query('search');
-
         // This query searches all the matching keywords from name and description.
         if ($search) {
             $query->where('name', 'like', '%' . $search . '%')
