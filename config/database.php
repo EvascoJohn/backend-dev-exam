@@ -30,6 +30,15 @@ return [
     */
 
     'connections' => [
+        
+        // 'mongodb' => [
+        //         'driver'   => 'mongodb',
+        //         'host'     => env('DB_HOST', 'localhost'),
+        //         'port'     => env('DB_PORT', 27017),
+        //         'database' => env('DB_DATABASE','mongodb'),
+        //         'username' => env(''),
+        //         'password' => env(''),
+        //     ],
 
         'sqlite' => [
             'driver' => 'sqlite',
